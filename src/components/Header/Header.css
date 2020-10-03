@@ -1,0 +1,106 @@
+.header {
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  width: 250px;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header__input > .MuiSvgIcon-root {
+  color: #65676b;
+}
+
+.header__left > img {
+  height: 50px;
+  align-self: center;
+}
+
+.header__input > input {
+  font-size: 1rem;
+  width: calc(100% - 45px);
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.header__center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.header__option > .MuiSvgIcon-root {
+  color: #65676b;
+}
+
+.header__option:hover > .MuiSvgIcon-root {
+  color: #1877f2;
+}
+
+.header__option--active > .MuiSvgIcon-root {
+  color: #1877f2;
+}
+
+.header__optionContainer {
+  position: relative;
+}
+
+.header__option {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header__optionBar--active {
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  left: 0;
+  background-color: #1877f2;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.header__option:hover {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
+
+.header__right {
+  display: flex;
+}
